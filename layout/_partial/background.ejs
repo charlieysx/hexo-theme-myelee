@@ -14,7 +14,8 @@
             // }
 
             var backgroundnum = <%= theme.background_image %>;
-            var backgroundimg = "url(<%- theme.root_url %>/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            var num = Math.ceil((Math.random() * 100)) % backgroundnum + 1;
+            var backgroundimg = "url(<%- theme.root_url %>/background/<%- theme.bg_img_path %>/bg-x.jpg)".replace(/x/gi, num);
             $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
         })
     </script>
