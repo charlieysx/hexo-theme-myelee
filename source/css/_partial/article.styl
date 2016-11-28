@@ -13,6 +13,7 @@
   position: relative;
   background: article-color;
   -webkit-transition: all 0.2s ease-in;
+  box-shadow: 0px 0px 10px rgba(0,0,0, 0.2);
   &.show{
     visibility: visible;
     -webkit-animation: cd-bounce-1 0.6s;
@@ -121,7 +122,7 @@
   margin-bottom: 0px;
   padding-bottom: .5em;
   word-break: break-word;
-  box-shadow: 3px 2px 8px rgba(0,0,0, .07);
+  box-shadow: 0px 0px 10px rgba(0,0,0, 0.2);
 }
 .article-header{
   border-left: 6px solid #eee;
@@ -377,6 +378,9 @@ li:hover {
     line-height: 1.6em;
     word-break: break-all;
     background: rgba(255, 255, 255, .4);
+    box-shadow: 0px 0px 10px rgba(0,0,0, .2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     span {
         display: inline-block;
         width: 5.8em;
