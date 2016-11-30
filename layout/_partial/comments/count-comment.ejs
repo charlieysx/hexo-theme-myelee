@@ -5,7 +5,8 @@
                 var duoshuoQuery = {short_name:"<%=theme.duoshuo.domain%>"};
                 (function() {
                     var d = document, s = d.createElement('script');
-                    s.src = 'http://static.duoshuo.com/embed.js';
+                    // s.src = 'http://static.duoshuo.com/embed.js';
+                    s.src = '/js/embed.js';
                     s.async = true; s.charset = 'UTF-8';
                     (d.head || d.body).appendChild(s);
                 })();
