@@ -18,16 +18,24 @@ if !heading_style
             font-family Arial
     h3
         margin .5em auto
-        color #438aac
-        background rgba(243,248,253,0.6)
-        border 1px solid #d2e8fa
+        color #51a7ea
+        background rgba(205,223,243,0.6)
+        border 1px solid #b3d5f1
         padding .2em .6em
-        box-shadow: 1px 1px 1px rgba(0,0,0, .15)
+        /*box-shadow: 1px 1px 1px rgba(0,0,0, .15)*/
         &:hover a
             text-decoration underline
-        &::after
-            content " >"
-    h4, h5, h6
+        /*&::after
+            content " >"*/
+    h4
+        color #2fbcd8
+        padding-bottom 5px
+        border-bottom 1px solid #ddd
+        border-top 1px solid #ddd
+        &::before
+            content " —— "
+            font-family Arial
+    h5, h6
         margin-top 20px
         color #574c4c
         padding-bottom 5px
